@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import QuoteForm from './components/QuoteForm'
 import QuoteCard from './components/QuoteCard';
 import axios from 'axios';
 
@@ -36,6 +37,7 @@ class App extends React.Component{
     return (
       <div className="App">
         <NavBar />
+        <QuoteForm />
         <QuoteCard quote={this.state.quote} />
         <button type="button" onClick={this.getQuote}>Get Quote</button>
       </div>
